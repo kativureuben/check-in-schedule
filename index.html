@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Progress Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Student Progress Manager</h2>
+
+    <label>Enter Student Name:</label>
+    <input type="text" id="studentName" placeholder="Student name">
+    <button onclick="addStudent()">Add Student</button>
+
+    <label>Record Assignment Grade</label>
+    <input type="number" id="assignmentNumber" placeholder="Assignment Number (1-10)">
+    <input type="number" id="assignmentScore" placeholder="Assignment Score">
+    <button onclick="recordAssignment()">Record Assignment Grade</button>
+
+    <label>Mid-course Test Score</label>
+    <input type="number" id="midCourseScore" placeholder="Mid-course test score">
+    <button onclick="recordMidCourseTest()">Record Mid-course Test</button>
+
+    <label>Mock Final Score</label>
+    <input type="number" id="mockFinalScore" placeholder="Mock final score">
+    <button onclick="recordMockFinal()">Record Mock Final</button>
+
+    <div class="student-list">
+      <h3>Students</h3>
+      <ul id="studentList"></ul>
+    </div>
+
+    <div class="progress">
+      <h3>Student Progress</h3>
+      <p id="progressReport"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
